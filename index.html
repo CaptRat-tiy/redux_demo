@@ -3,11 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Redux Intro</title>
   </head>
   <body>
+    <div class="shirtColor">
+      <input type="text" name="colors" list="shirtColors" placeholder="preferred color:">
+      <datalist id="shirtColors">
+        <option value="red">
+        <option value="green">
+        <option value="purple">
+        <option value="mauve">
+        <option value="nude">
+      </datalist>
+    </div>
+    <br/>
+    <br/>
 
+    <div class="shirtSize">
+      <input type="text" name="size" list="shirtSizes" placeholder="preferred size:">
+      <datalist id="shirtSizes">
+        <option value="x-small">
+        <option value="small">
+        <option value="medium">
+        <option value="large">
+        <option value="x-large">
+        <option value="XX-large">
+      </datalist>
+    </div>
+    <br/>
+    <br/>
+
+    <div class="motto">
+      <input type="text" id="customerInput" value="Some text...">
+      <button onclick="myFunction()">Upload your motto here</button>
+
+      <p id="motto"></p>
+    </div>
+
+    <!-- <script>
+    function myFunction() {
+        var x = document.getElementById("customerInput").value;
+        document.getElementById("motto").innerHTML = x;
+    } -->
     <script src="./dist/bundle.js"></script>
   </body>
 </html>
